@@ -1,0 +1,116 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{1}
+
+(a)
+
+$$
+  \sigma(-x) = \frac{1}{1 + e^{x}}
+$$
+
+\begin{align*}
+  1 - \sigma(x) &= \frac{e^{-x}}{1 + e^{-x}} \\
+                &= \frac{e^{-x}e^{x}}{e^{x}(1 + e^{-x})} \\
+                &= \frac{1}{1 + e^{x}}
+\end{align*}
+
+(b)
+
+\begin{align*}
+  \frac{d}{dx}\sigma(x) &= - \frac{(1 + e ^{-x})^{'}}{(1 + e^{-x})^2} \\
+                        &= \frac{e^{-x}}{1 + 2e^{-x} + e^{-2x}} \\
+                        &= \frac{1}{e^{x} + 2 + e^{-x}} \\
+                        &= \frac{1}{(1 + e^{-x})(1 + e^{x})} \\
+                        &= \sigma(x)(1 - \sigma(x))
+\end{align*}
+
+\section*{2}
+
+$$
+f^{'}(c) =\frac{2}{n}\sum_{i = 1} ^ {n} (c - x _{i})
+$$
+
+Let $f^{'}(c) = 0$, we can have
+
+$$
+c = \frac{\sum_{i = 1} ^ {n} x_{i}}{n}
+$$
+
+$$
+f^{''}(c) = 2 > 0
+$$
+
+So it must be the minimum.
+
+\section*{3}
+
+I choose 2, there is no information about religious leaders.
+
+\section*{4}
+
+Let $A$ represents the event of breast cancer. And let $B$
+represents the event of the positive, and we can get the following
+formulas.
+
+\begin{align*}
+  P(A) &= 0.01 \\
+  P(B | A) &= 0.8 \\
+  P(B | \bar{A}) &= 0.096
+\end{align*}
+
+\begin{align*}
+  P(A | B) &= \frac{P(B|A)P(A)}{P(B)} \\
+           &= \frac{P(B|A)P(A)}{P(B|A)P(A) + P(B|\bar{A})P(\bar{A})} \\
+           &= \frac{0.8 * 0.01}{0.8 * 0.01 + 0.096 * 0.99} \\
+           &= 0.078
+\end{align*}
+
+\section*{5}
+
+The distribution is Normal distribution.
+
+\begin{align*}
+  \frac{1}{\sqrt{2\pi}\sigma} &= 0.063 \\
+  \sigma^{2} &= 6.38
+\end{align*}
+
+So choose B.
+
+\section*{6}
+
+(a)
+
+$$
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+$$
+
+$$
+R(A) = 2
+$$
+
+(b)
+
+$$
+0\vec{v_{1}} = \vec{v_{2}}
+$$
+
+(c)
+
+$$
+10\vec{v_{1}} + 2\vec{v_{2}} = \vec{3}
+$$
+
+(d)
+
+$$
+\vec{v_{1}} - \vec{v_{2}} = \vec{v_{3}}
+$$
+
+\end{document}
